@@ -6,6 +6,15 @@ public class Q03 {
 
 	public static void boxy ( double xCtr , double yCtr , double halfLength ) {
 		//your code here
+		if(halfLength>.001){
+			StdDraw.square(xCtr,yCtr,halfLength);
+		
+			boxy(xCtr-halfLength,yCtr-halfLength,halfLength/2);
+			boxy(xCtr+halfLength,yCtr-halfLength,halfLength/2);
+			
+			
+		}
+
 	}
 
 	public static void main(String[] args) {
@@ -13,6 +22,8 @@ public class Q03 {
 		//shown in "image02.png" in the images folder.
 
 		//Your solution must use recursion
+		
+
 
 		boxy (0.5 , 0.5 , 0.25);
 	}

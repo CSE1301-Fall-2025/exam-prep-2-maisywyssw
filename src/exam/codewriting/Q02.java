@@ -13,7 +13,15 @@ public class Q02 {
 	*
 	**/
 	public static void dashedLine(double x) {
-		
+		//StdDraw.line(x,0.0,x,1.0);
+		double space = 0.02;
+		double y =0.0;
+		while (y<1.0){
+			StdDraw.line(x,y,x,y+space);
+			y=y+space+space;
+
+
+		}
 	}
 
 	public static void main(String[] args) {
